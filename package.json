@@ -1,0 +1,20 @@
+{
+  "name": "Team-60-BackEnd",
+  "version": "1.0.0",
+  "description": "[![Codacy Badge](https://api.codacy.com/project/badge/Grade/03a7aa1c92854b2aa70992e5164da248)](https://app.codacy.com/gh/BuildForSDGCohort2/Team-60-BackEnd?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDGCohort2/Team-60-BackEnd&utm_campaign=Badge_Grade_Settings)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuildForSDGCohort2/Team-60-BackEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuildForSDGCohort2/Team-60-BackEnd/issues"
+  },
+  "homepage": "https://github.com/BuildForSDGCohort2/Team-60-BackEnd#readme"
+}
