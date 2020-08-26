@@ -2,8 +2,9 @@
 
 # Team-60-BackEnd
 
-** The Back-end of the home page may look similar to what we have here
+**The Back-end workflow Number 1**
 
+![Alt text](https://github.com/BuildForSDGCohort2/Team-60-BackEnd/blob/develop/Medistat%20workflow.jpg?raw=true "Login Workflow")
 
 
 # **Medistatus**
