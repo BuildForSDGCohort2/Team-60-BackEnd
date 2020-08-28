@@ -11,7 +11,9 @@ const connectToDB = () =>
       useUnifiedTopology: true,
       useFindAndModify: false,
     })
+    /* eslint no-console: ["error", { allow: ["warn", "log"] }] */
     .then(() => console.log("Connected to database successfully."))
+    /* eslint no-console: ["error", { allow: ["warn", "log"] }] */
     .catch((e) => console.log("Error: ", e));
 
 export default connectToDB;

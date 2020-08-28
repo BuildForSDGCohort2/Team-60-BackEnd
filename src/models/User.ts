@@ -11,8 +11,6 @@ export interface UserDocument extends mongoose.Document {
   username: string;
   email: string;
   password: string;
-  saved_recipes?: [{}];
-  favorite_recipes?: [{}];
   createdAt?: string;
   emailConfirmedAt?: string;
   emailConfirmCode?: string;

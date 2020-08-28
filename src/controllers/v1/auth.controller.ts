@@ -18,7 +18,7 @@ const login = async (req: Request, res: Response) => {
   if (user) {
     if (user.comparePassword(password)) {
       const token = user.generateToken();
-      user.password = undefined;
+      user.password = "***";
       return res.status(200).json({
         status: 200,
         user,
