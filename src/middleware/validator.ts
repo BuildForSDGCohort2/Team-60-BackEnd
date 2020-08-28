@@ -1,4 +1,5 @@
 import { check, body } from "express-validator";
+import { isBoolean } from "util";
 
 const validator: any = {};
 
@@ -52,6 +53,16 @@ validator.register = [
     .withMessage("Password must be at least 5 chars long")
     .trim()
     .escape(),
+
+  body("healthWorker")
+    .exists()
+    .withMessage("HealthWorker must be provided")
+    .isBoolean(),
+
+  body("hospital")
+    .exists()
+    .withMessage("Hospital must be provided")
+    .isBoolean(),
 ];
 
 export default validator;

@@ -11,6 +11,8 @@ export interface UserDocument extends mongoose.Document {
   username: string;
   email: string;
   password: string;
+  hospital: boolean;
+  healthWorker: boolean;
   createdAt?: string;
   emailConfirmedAt?: string;
   emailConfirmCode?: string;
@@ -28,6 +30,8 @@ const UserSchema: mongoose.Schema = new Schema({
   },
   emailConfirmedAt: Date,
   emailConfirmCode: String,
+  healthWorker: Boolean,
+  hospital: Boolean,
 });
 
 // before saving a new user document, hash the password

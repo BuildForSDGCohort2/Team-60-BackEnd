@@ -41,11 +41,15 @@ const register = async (req: Request, res: Response) => {
     username,
     email,
     password,
+    healthWorker,
+    hospital,
   }: {
     name: string;
     username: string;
     email: string;
     password: string;
+    healthWorker: boolean;
+    hospital: boolean;
   } = req.body;
 
   const errors = validationResult(req);
@@ -77,6 +81,8 @@ const register = async (req: Request, res: Response) => {
     username,
     email,
     password,
+    hospital,
+    healthWorker,
   });
 
   const token = user.generateToken();
