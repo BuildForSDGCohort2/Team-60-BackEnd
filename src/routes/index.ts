@@ -1,8 +1,8 @@
-import express, { Router } from "express";
+import express, { Express } from "express";
 import authRouter from "./v1/auth";
 
-const RouterV1: Router = express.Router();
+const v1Router: Express = express();
 
-RouterV1.use("/api/v1/auth", authRouter);
+v1Router.use("/api/v1/auth", authRouter);
 
-export default RouterV1;
+export default v1Router;

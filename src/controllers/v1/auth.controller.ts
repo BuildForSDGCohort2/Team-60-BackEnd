@@ -81,7 +81,7 @@ const register = async (req: Request, res: Response) => {
 
   const token = user.generateToken();
   // don't expose thy user
-  user.password = undefined;
+  user.password = "***";
 
   return res.status(201).json({
     status: 201,
